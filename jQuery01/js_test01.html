@@ -1,0 +1,47 @@
+<!-- 課題１−２ -->
+var answer = prompt('数字を入力してください');
+if (answer > 0) {
+  alert('正の数です');
+}else if (answer == 0) {
+  alert('正の数での負の数でもありません')
+}else if (answer < 0) {
+  alert('負の数です');
+}else {
+  alert ('数値を入力してください');
+}
+
+
+<!-- 課題３−５ -->
+var animals = ['パンダ','ライオン','キリン'];
+var answer = prompt('動物を入力してださい')
+if (answer != 'ライオン') {
+  var i = 0;
+  while (i < animals.length) {
+    alert(animals[i]);
+    i++;
+  }
+}else {
+  alert(answer);
+}
+
+
+<!-- 課題６−７ -->
+var animals = [
+  {'name': 'パンダ', 'weight': 80},
+  {'name': 'ライオン', 'weight': 200},
+  {'name': 'キリン', 'weight': 300}
+];
+var inputname = prompt('動物の名前を入力してください');
+for (var i = 0; i < animals.length; i++) {
+  if (inputname == animals[i].name) {
+    alert(animals[i].weight + 'Kg');
+  }
+}
+
+
+<!-- 課題８ -->
+function calc(x){
+  return x * x * 3.14;
+}
+var x = prompt('半径を入力してください');
+alert(calc(x));
